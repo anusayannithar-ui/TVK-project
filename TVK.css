@@ -1,0 +1,404 @@
+/* =========================================================
+   GENERAL / GLOBAL STYLES
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    margin:0;
+}
+
+.TVK-nav {
+    color: black;
+   
+}
+
+.nav-btn {
+    color:black;
+    border:3px outset rgba(rgb(87, 85, 85), rgb(59, 61, 59), rgb(61, 61, 63), 0.5);
+    border-radius:10px;
+
+
+}
+
+
+
+
+/* =========================================================
+   HOME / INDEX
+   ========================================================= */
+
+#index {
+    text-align:center;
+    background-color: tomato;
+    color:white;
+    padding:20px;
+}
+
+#about {
+    border-width:2px;
+    border-color: rgb(102, 93, 93);
+    border-style: solid;
+    border-radius: 6px;
+    margin-left:10px;
+    margin-top:10px;
+    transition:transform 0.3s ease,box-shadow 0.3s ease;
+
+
+
+    width:900px;
+}
+
+#about:hover {
+    transform:translateX(+12px);
+    box-shadow:0 0 1px 2px rgb(252, 132, 132);
+}
+
+
+
+/* =========================================================
+   EVENTS
+   ========================================================= */
+
+#events {
+    text-align: center;
+    color:white;
+    background-color:darkblue;
+    padding: 20px;
+    border:smooth;
+    
+}
+
+#event-container {
+    margin-top:40px;
+    max-width:1000px ;
+   
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+}
+
+.event-card { 
+    border-radius:8px;
+    color:black;
+    background-color: white;
+    padding:20px;
+    border:3px outset rgb(90, 214, 248);
+    margin:30px;
+    transition:all 0.3s ease;
+    
+}
+
+.event-card:hover {
+    background-color: rgb(180, 255, 5);
+    color: black;
+    transition:0.3s;
+}
+
+#date {
+    list-style:"📅";
+}
+#place {
+    list-style:"📍";
+}
+
+#meal {
+    list-style:"🍗";
+}
+.symbol-party::before {
+    content:"🎉";
+
+}
+.event-desc::before{
+    content:"⇏";
+
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+#contact {
+    
+    background-color: rgb(255, 255, 255);
+    color:black;
+    border-radius:10px;
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    
+    outline:2px solid rgb(115, 118, 118);
+    transition:transform 0.3s ease,box-shadow 0.3s ease;
+    
+
+}
+
+.contact-header {
+    text-align: center;
+    color:white;
+    background-color:rgb(233, 35, 239);
+    padding: 20px;
+    border:smooth;
+
+}
+
+#contact:hover {
+    outline:2px solid rgb(19, 124, 252);
+   
+    color:rgb(34, 31, 31) ;
+    transform:translateY(-8x);
+    box-shadow: 0 0 7px 1px rgb(23, 204, 245);
+   
+
+}
+
+#contact-form {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    padding:20px;
+    
+}
+
+input::placeholder {
+    color: black;
+    
+    
+}
+textarea::placeholder {
+    color: black;
+    
+    padding:10px;
+}
+input[placeholder]:hover {
+  background: rgb(182, 179, 179);
+  color:rgb(92, 88, 88);
+  
+
+}
+
+textarea[placeholder]:hover {
+  background: rgb(182, 179, 179);
+  color:rgb(92, 88, 88);
+
+}
+
+
+input[placeholder] {
+    width:200px;
+    height:30px;
+}
+
+textarea[placeholder] {
+  width:300px;
+  height:70px;  
+}
+
+.submit-btn {
+    background-color: green;
+    border:3px outset ;
+    width:100px;
+    height:40px;
+
+}
+
+
+
+
+
+/* =========================================================
+   PLAYERS
+   ========================================================= */
+
+.player-image {
+    height:200px;
+    width:200px;
+    max-width: 100%;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid;
+}
+.players-header {
+    text-align: center;
+    color:white;
+    background-color:rgb(253, 116, 4);
+    padding: 20px;
+    border:smooth;
+}
+
+#Anusayan::before {
+    content:"🧒";
+}
+
+#Thananjayan::before{
+    content:"😎";
+}
+
+.player-card h3::before{
+    content:"🏏";
+}
+
+#Kapishan::before {
+    content:"😐";
+}
+
+#Anosikan::before {
+    content:"😇";
+}
+
+.player-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* temporary test */
+
+.player-card {
+    width:250px;
+    padding:20px;
+    border-radius:15px;
+    background-color:white;
+    text-align:center;
+}
+
+.selected{
+    border:4px solid transparent;
+    border-image:conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+}
+
+
+/* =========================================================
+   TEAM PHOTO
+   ========================================================= */
+
+#team-photo h4::after{
+    content:"✌️";
+}
+
+#team-photo img {
+    height:500px;
+    width:1000px;
+    max-width: 100%;
+    object-fit:cover;
+    border-radius:30px;
+    border:4px solid lightblue;
+    transition:transform 0.3s ease;
+}
+
+
+#team-photo img {
+    transform:translateY(-8px);
+   
+}
+
+
+/* =========================================================
+   MATCHES
+   ========================================================= */
+
+.match-teams {
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content : center;
+    align-items: baseline;
+
+    background: red;
+}
+
+.matches-header {
+    text-align: center;
+    color:white;
+    background-color:rgb(18, 242, 182);
+    padding: 20px;
+    border:smooth;
+}
+
+.match-teams h2 {
+    font-size: 20px;
+    flex:1;
+    text-align:center;
+}
+
+.match-teams span{
+    font-size: 16px;
+}
+
+.match-card {
+    
+    width:250px;
+    height:100%;
+    padding:20px;
+    border-radius: 8px;
+    text-align:left;
+}
+.selected-matches{
+    border:4px solid transparent;
+    border-image:conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+
+}
+
+#matches{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:stretch;
+}
+
+#matches > section {
+    display:flex;
+}
+
+.match-teams {
+    margin-bottom:35px;
+}
+
+
+/* =========================================================
+   MATCH INFORMATION ICONS
+   ========================================================= */
+
+.place::before {
+    content:"📍";
+}
+
+.time::before {
+    content:"⏰";
+}
+
+.toss::before {
+    content:"🏏";  /*use list-style when you want to replace the points here.*/
+}
+
+.winner::before {
+    content:"🏅";
+}
+.date::before {
+    content:"📅";
+}
+
+
+/* =========================================================
+   OTHER / OLD NOTES
+   ========================================================= */
+
+/* Syntax order: width | style | color */
+/*div { border: 2px solid #ff3333; }*/
+
+
